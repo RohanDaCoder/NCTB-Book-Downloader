@@ -13,7 +13,7 @@
 
 <body class="bg-gray-50 text-gray-900">
     <div class="container mx-auto p-6">
-        <h1 class="text-4xl font-bold text-center mb-8 flex items-center justify-center gap-2 hover:-sky-700">
+        <h1 class="text-4xl font-bold text-center mb-8 flex items-center justify-center gap-2 hover:text-sky-700">
             Book Downloader
         </h1>
         <div class="mb-6 flex justify-center gap-4">
@@ -50,7 +50,7 @@
 
     <div class="container mx-auto p-6 text-center mt-8">
         <h2 class="text-lg font-semibold">Credits</h2>
-        <p class="text-gray-700">Made by Rohan</p>
+        <p class="text-gray-700">Made by AL Zami Rohan</p>
         <p class="text-gray-700">Books are downloaded from NCTB</p>
     </div>
 
@@ -58,7 +58,7 @@
         const booksData = {
             2025: {
                 "Class 8": {
-                    folder: "/books/2025/Class8/",
+                    folder: "NCTB-Book-Downloader/books/2025/Class8/",
                     books: [
                         { name: "Agriculture Education", file: "Agriculture Education (Class 8).pdf" },
                         { name: "Anondopath", file: "Anondopath (Class 8).pdf" },
@@ -91,6 +91,7 @@
             a.download = fileUrl.split("/").pop();
             a.style.display = "none";
             document.body.appendChild(a);
+            alert(fileUrl)
             return a;
         }
 
