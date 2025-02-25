@@ -58,7 +58,7 @@
         const booksData = {
             2025: {
                 "Class 8": {
-                    folder: "NCTB-Book-Downloader/books/2025/Class8/",
+                    folder: "books/2025/Class8/",
                     books: [
                         { name: "Agriculture Education", file: "Agriculture Education (Class 8).pdf" },
                         { name: "Anondopath", file: "Anondopath (Class 8).pdf" },
@@ -91,7 +91,6 @@
             a.download = fileUrl.split("/").pop();
             a.style.display = "none";
             document.body.appendChild(a);
-            alert(fileUrl)
             return a;
         }
 
